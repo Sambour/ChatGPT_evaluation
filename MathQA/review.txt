@@ -1,0 +1,13 @@
+Response to Reviewer 1: We thank the reviewer for the positive feedback.
+
+2.1 rely on the models, always can cross check
+address the minor comments
+
+3. novelty: misunderstanding, combining LLMs with ASP; extracting using s(CASP), goal directed
+
+get all information, then extracted once and recommendation immediately, right away
+Inexpensive Thai restaurant. add one example to illustrate.
+We will do the user study later. Not able to do right now
+
+defalut rules
+events
