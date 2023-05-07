@@ -1,0 +1,220 @@
+{
+    "Problem": "125 liters of a mixture of milk and water contains in the ratio 3 : 2 . how much water should now be added so that the ratio of milk and water becomes 3 : 4 ?",
+    "Rationale": "\"milk = 3 / 5 * 125 = 75 liters water = 50 liters 75 : ( 50 + p ) = 3 : 4 150 + 3 p = 400 = > p = 50 50 liters of water are to be added for the ratio become 3 : 4 . answer : d\"",
+    "options": "a ) 12 liters , b ) 32 liters , c ) 41 liters , d ) 50 liters , e ) 34 liters",
+    "correct": "d",
+    "annotated_formula": "multiply(divide(125, add(3, 2)), 2)",
+    "linear_formula": "add(n1,n2)|divide(n0,#0)|multiply(n2,#1)|",
+    "category": "general",
+    "predicted_rational": "let the quantity of milk and water in the mixture be 3x and 2x respectively. so, 3x + 2x = 125 => x = 25. therefore, the quantity of milk and water in the mixture is 75 liters and 50 liters respectively. let's assume we add y liters of water to the mixture. so, the quantity of water becomes 50 + y and the quantity of milk remains the same i.e. 75. now, the ratio of milk and water becomes 3 : 4. so, 75 / (50 + y) = 3 / 4 => y = 41. therefore, the amount of water that needs to be added is 41 liters. the answer is c.",
+    "prediction": "c"
+}
+{
+    "Problem": "125 liters of a mixture of milk and water contains in the ratio 3 : 2 . how much water should now be added so that the ratio of milk and water becomes 3 : 4 ?",
+    "Rationale": "\"milk = 3 / 5 * 125 = 75 liters water = 50 liters 75 : ( 50 + p ) = 3 : 4 150 + 3 p = 400 = > p = 50 50 liters of water are to be added for the ratio become 3 : 4 . answer : d\"",
+    "options": "a ) 12 liters , b ) 32 liters , c ) 41 liters , d ) 50 liters , e ) 34 liters",
+    "correct": "d",
+    "annotated_formula": "multiply(divide(125, add(3, 2)), 2)",
+    "linear_formula": "add(n1,n2)|divide(n0,#0)|multiply(n2,#1)|",
+    "category": "general",
+    "predicted_rational": "1. Understand the problem: We are given information about the ratio of milk and water in a mixture and the amount of the mixture. We need to find the amount of water that needs to be added to change the ratio of milk and water.\n\n2. Determine the amount of milk and water in the original mixture: We can use the ratio to determine the amount of milk and water in the original mixture:\n\nMilk = (3/5) x 125 = 75 liters\nWater = (2/5) x 125 = 50 liters\n\n3. Determine the amount of milk and water in the final mixture: We are given that the ratio of milk and water in the final mixture should be 3:4. Let x be the amount of water that needs to be added. Then, we can set up the following equation based on the given information:\n\n75 / (50 + x) = 3 / 4\n\n4. Solve for x: We can simplify the equation as follows:\n\n75 x 4 = 3 (50 + x)\n300 = 150 + 3x\n150 = 3x\nx = 50\n\nTherefore, 50 liters of water need to be added.\n\n5. Check the answer: We can check our answer by verifying that the ratio of milk and water in the final mixture is indeed 3:4:\n\nMilk = 75 liters\nWater = 50 + 50 = 100 liters\nRatio of milk to water = 75 : 100 = 3 : 4\n\nTherefore, the answer is d.\nAnswer: d",
+    "prediction": "d"
+}
+{
+    "Problem": "15 business executives and 3 chairmen meet at a conference . if each business executive shakes the hand of every other business executive and every chairman once , and each chairman shakes the hand of each of the business executives but not the other chairmen , how many handshakes would take place ?",
+    "Rationale": "\"there are 15 business exec and in each handshake 2 business execs are involved . hence 15 c 2 = 105 also , each of 15 exec will shake hand with every 3 other chairmen for total of 45 handshake . total = 45 + 105 = 150 ans : a\"",
+    "options": "a ) 150 , b ) 131 , c ) 115 , d ) 90 , e ) 45",
+    "correct": "a",
+    "annotated_formula": "add(divide(multiply(15, subtract(15, const_1)), const_2), multiply(15, 3))",
+    "linear_formula": "multiply(n0,n1)|subtract(n0,const_1)|multiply(n0,#1)|divide(#2,const_2)|add(#3,#0)|",
+    "category": "geometry",
+    "predicted_rational": "there are 15 business executives and each shakes hands with 15-1=14 other executives and 3 chairmen, for a total of 14+3=17 handshakes. so the total number of handshakes is 15*17=255. however, we have counted each handshake twice (once for each person involved), so we need to divide by 2 to get the final answer of 255/2=127.5, which rounds up to 128. therefore, the answer is b.",
+    "prediction": "b"
+}
+{
+    "Problem": "15 business executives and 3 chairmen meet at a conference . if each business executive shakes the hand of every other business executive and every chairman once , and each chairman shakes the hand of each of the business executives but not the other chairmen , how many handshakes would take place ?",
+    "Rationale": "\"there are 15 business exec and in each handshake 2 business execs are involved . hence 15 c 2 = 105 also , each of 15 exec will shake hand with every 3 other chairmen for total of 45 handshake . total = 45 + 105 = 150 ans : a\"",
+    "options": "a ) 150 , b ) 131 , c ) 115 , d ) 90 , e ) 45",
+    "correct": "a",
+    "annotated_formula": "add(divide(multiply(15, subtract(15, const_1)), const_2), multiply(15, 3))",
+    "linear_formula": "multiply(n0,n1)|subtract(n0,const_1)|multiply(n0,#1)|divide(#2,const_2)|add(#3,#0)|",
+    "category": "geometry",
+    "predicted_rational": "1. Understand the problem: We are given the number of business executives and chairmen at a conference and the number of handshakes that occur between them. We need to find the total number of handshakes.\n\n2. Determine the number of handshakes between business executives: Each business executive shakes hands with every other business executive once, so the number of handshakes between business executives is:\n\n(15 x 14) / 2 = 105\n\n3. Determine the number of handshakes between chairmen and business executives: Each chairman shakes hands with each business executive once, so the number of handshakes between chairmen and business executives is:\n\n3 x 15 = 45\n\n4. Determine the total number of handshakes: The total number of handshakes is the sum of the handshakes between business executives and the handshakes between chairmen and business executives:\n\nTotal number of handshakes = 105 + 45 = 150\n\nTherefore, the answer is a.\nAnswer: a",
+    "prediction": "a"
+}
+{
+    "Problem": "20 beavers , working together in a constant pace , can build a dam in 6 hours . how many hours will it take 12 beavers that work at the same pace , to build the same dam ?",
+    "Rationale": "\"total work = 20 * 6 = 120 beaver hours 12 beaver * x = 120 beaver hours x = 120 / 12 = 10 answer : a\"",
+    "options": "a ) 10 . , b ) 4 . , c ) 5 . , d ) 6 , e ) 8 .",
+    "correct": "a",
+    "annotated_formula": "divide(multiply(6, 20), 12)",
+    "linear_formula": "multiply(n0,n1)|divide(#0,n2)|",
+    "category": "physics",
+    "predicted_rational": "Let's use the formula: Work = Rate x Time. If 20 beavers can build a dam in 6 hours, then their rate is 1/6 (1 dam per 6 hours). Let's use this rate to find the time it would take 12 beavers to build the same dam:\n\nWork = Rate x Time\n1 dam = (20 beavers' rate) x 6 hours\n1 dam = (12 beavers' rate) x Time\n(20/6) = (12/Time)\nTime = (12/20) x 6\nTime = 3.6 hours\n\nRounding up, it would take 4 hours for 12 beavers to build the same dam. Therefore, the answer is (b) 4.",
+    "prediction": "b"
+}
+{
+    "Problem": "20 beavers , working together in a constant pace , can build a dam in 6 hours . how many hours will it take 12 beavers that work at the same pace , to build the same dam ?",
+    "Rationale": "\"total work = 20 * 6 = 120 beaver hours 12 beaver * x = 120 beaver hours x = 120 / 12 = 10 answer : a\"",
+    "options": "a ) 10 . , b ) 4 . , c ) 5 . , d ) 6 , e ) 8 .",
+    "correct": "a",
+    "annotated_formula": "divide(multiply(6, 20), 12)",
+    "linear_formula": "multiply(n0,n1)|divide(#0,n2)|",
+    "category": "physics",
+    "predicted_rational": "1. Understand the problem: We are given information about the number of beavers needed to build a dam and the time it takes them to do so. We need to find the time it takes a different number of beavers to build the same dam.\n\n2. Use the formula: We can use the formula:\n\ntime = (work) / (rate)\n\nwhere work is the amount of work to be done (in this case, building a dam), and rate is the rate at which the beavers work.\n\n3. Calculate the work: The work to be done is building a dam, which is a fixed amount of work.\n\n4. Calculate the rate: The rate at which the beavers work is the amount of work they can do in one hour. We can calculate this rate by dividing the total work by the number of beavers and the time it takes them:\n\nrate = work / (number of beavers x time)\n\nUsing the given information, we can calculate the rate of the 20 beavers as:\n\nrate = 1 / (20 x 6) = 1/120\n\n5. Calculate the time for 12 beavers: We can use the same formula as before, but with the new number of beavers:\n\ntime = work / (rate x number of beavers)\n\nPlugging in the values we know, we get:\n\ntime = 1 / (1/120 x 12) = 10\n\nTherefore, it will take 12 beavers 10 hours to build the same dam.\n\nThe answer is a) 10.",
+    "prediction": "a"
+}
+{
+    "Problem": "25 onions on a scale weigh 5.12 kg . when 3 onions are removed from the scale , the average weight of the 22 onions is 200 grams . what is the average weight ( in grams ) of the 3 onions which were removed ?",
+    "Rationale": "22 * 200 = 4400 . the other 3 onions weigh a total of 720 grams . the average weight is 720 / 3 = 240 grams . the answer is c .",
+    "options": "a ) 200 , b ) 220 , c ) 240 , d ) 260 , e ) 280",
+    "correct": "c",
+    "annotated_formula": "divide(subtract(multiply(5.12, const_1000), multiply(22, 200)), 3)",
+    "linear_formula": "multiply(n1,const_1000)|multiply(n3,n4)|subtract(#0,#1)|divide(#2,n2)",
+    "category": "general",
+    "predicted_rational": "Let the average weight of each onion be x grams. Then, the total weight of 25 onions is 25x grams. We know that 25x = 5120 (since the weight is given in kilograms). So, x = 204 grams. \n\nWhen 3 onions are removed, there are 22 onions left with an average weight of 200 grams. So, the total weight of the 22 onions is 22 * 200 = 4400 grams. \n\nThe total weight of the 3 onions that were removed is (25 * 204) - 4400 = 260 grams. \n\nTherefore, the average weight of each of the 3 onions is 260/3 = 86.67 grams, which is closest to option e) 280.",
+    "prediction": "e"
+}
+{
+    "Problem": "25 onions on a scale weigh 5.12 kg . when 3 onions are removed from the scale , the average weight of the 22 onions is 200 grams . what is the average weight ( in grams ) of the 3 onions which were removed ?",
+    "Rationale": "22 * 200 = 4400 . the other 3 onions weigh a total of 720 grams . the average weight is 720 / 3 = 240 grams . the answer is c .",
+    "options": "a ) 200 , b ) 220 , c ) 240 , d ) 260 , e ) 280",
+    "correct": "c",
+    "annotated_formula": "divide(subtract(multiply(5.12, const_1000), multiply(22, 200)), 3)",
+    "linear_formula": "multiply(n1,const_1000)|multiply(n3,n4)|subtract(#0,#1)|divide(#2,n2)",
+    "category": "general",
+    "predicted_rational": "1. Understand the problem: We are given information about the weight of onions on a scale and the average weight of a certain number of onions. We need to find the average weight of a certain number of onions that were removed from the scale.\n\n2. Determine the total weight of the onions: We can determine the total weight of the onions on the scale by multiplying the average weight by the number of onions:\n\nTotal weight = 5.12 kg = 5120 g\nAverage weight = Total weight / 25 = 204 g\n\n3. Determine the total weight of the 22 onions: We can determine the total weight of the 22 onions by multiplying the average weight by the number of onions:\n\nTotal weight of 22 onions = 200 g x 22 = 4400 g\n\n4. Determine the total weight of the 3 onions: We can determine the total weight of the 3 onions that were removed by subtracting the weight of the 22 onions from the weight of the original 25 onions:\n\nTotal weight of 3 onions = Total weight - Total weight of 22 onions = 720 g\n\n5. Determine the average weight of the 3 onions: We can determine the average weight of the 3 onions by dividing the total weight by the number of onions:\n\nAverage weight of 3 onions = Total weight of 3 onions / 3 = 240 g\n\nTherefore, the answer is c.\nAnswer: c",
+    "prediction": "c"
+}
+{
+    "Problem": "4 out of 8 employees are capable of doing a certain task . sixty percent of the 5 employees , including the 4 who are capable , are assigned to a project involving this task . what percentage of employees assigned to the project are not capable ?",
+    "Rationale": "given 50 % of 8 employees including 4 who are capable of doing task . 60 % of 5 employeees = 50 / 100 * 4 = 4 employees = = = > 4 employees who are capable of doing the task and no one employee who is not capable . percentage of employees assigned who are not capable answer : e",
+    "options": "a ) 43.33 % , b ) 33.33 % , c ) 13.33 % , d ) 38.33 % , e ) none",
+    "correct": "e",
+    "annotated_formula": "multiply(divide(subtract(5, 4), 5), const_100)",
+    "linear_formula": "subtract(n2,n0)|divide(#0,n2)|multiply(#1,const_100)",
+    "category": "general",
+    "predicted_rational": "Out of 8 employees, 4 are capable and 4 are not. Out of the 5 employees assigned to the project, 4 are capable and 1 is not. Therefore, the percentage of employees assigned to the project who are not capable is (1/5) * 100 = 20%. However, we need to find the percentage of employees assigned to the project who are not capable out of the 60% who are assigned to the project. So, the final answer is (20/60) * 100 = 33.33%. Therefore, the answer is b.",
+    "prediction": "b"
+}
+{
+    "Problem": "4 out of 8 employees are capable of doing a certain task . sixty percent of the 5 employees , including the 4 who are capable , are assigned to a project involving this task . what percentage of employees assigned to the project are not capable ?",
+    "Rationale": "given 50 % of 8 employees including 4 who are capable of doing task . 60 % of 5 employeees = 50 / 100 * 4 = 4 employees = = = > 4 employees who are capable of doing the task and no one employee who is not capable . percentage of employees assigned who are not capable answer : e",
+    "options": "a ) 43.33 % , b ) 33.33 % , c ) 13.33 % , d ) 38.33 % , e ) none",
+    "correct": "e",
+    "annotated_formula": "multiply(divide(subtract(5, 4), 5), const_100)",
+    "linear_formula": "subtract(n2,n0)|divide(#0,n2)|multiply(#1,const_100)",
+    "category": "general",
+    "predicted_rational": "1. Understand the problem: We are given information about the capabilities of employees and the assignment of employees to a project. We need to find the percentage of employees assigned to the project who are not capable of doing the task.\n\n2. Determine the number of employees assigned to the project: We can determine the number of employees assigned to the project by multiplying the total number of employees by the percentage assigned to the project:\n\nNumber of employees assigned to project = 5 x 60% = 3\n\n3. Determine the number of capable employees assigned to the project: We are told that 4 out of 5 employees, including the 4 who are capable, are assigned to the project. Therefore, the number of capable employees assigned to the project is 4.\n\n4. Determine the number of not capable employees assigned to the project: We can subtract the number of capable employees assigned to the project from the total number of employees assigned to the project to find the number of not capable employees assigned to the project:\n\nNumber of not capable employees assigned to project = 3 - 4 = -1\n\nThis result does not make sense, as we cannot have a negative number of employees. Therefore, there must be an error in the problem statement or in our calculations.\n\n5. Check for errors: We can check our calculations by verifying that the percentages and numbers given in the problem statement are consistent. However, we cannot find a consistent set of values that would lead to a valid answer.\n\nTherefore, the answer is e (none of these), as the problem statement is flawed and cannot be solved as written.",
+    "prediction": "e"
+}
+{
+    "Problem": "4242 × 9999 = ?",
+    "Rationale": "\"a 42415758 4242 × 9999 = 4242 × ( 10000 - 1 ) = 4242 × 10000 - 4242 × 1 = 42420000 - 4242 = 42415758\"",
+    "options": "a ) 42415758 , b ) 42415751 , c ) 42415752 , d ) 42415753 , e ) 42415754",
+    "correct": "a",
+    "annotated_formula": "multiply(divide(4242, 9999), const_100)",
+    "linear_formula": "divide(n0,n1)|multiply(#0,const_100)|",
+    "category": "general",
+    "predicted_rational": "We can use the shortcut method for multiplying numbers that differ by 1 in their thousands place and have the same digits in their hundreds, tens, and ones places. We first subtract 4242 from 10000 to get 5758, which will be the first part of our answer. Then, we multiply the digits in the hundreds, tens, and ones places of the two numbers and place the result between 57 and 58. The product of 42 and 99 is 4158, so we place 415 between 57 and 58 to get 5758415. Finally, we add 1 to the result to get 5758416. Therefore, the answer is e) 42415754.",
+    "prediction": "e"
+}
+{
+    "Problem": "4242 × 9999 = ?",
+    "Rationale": "\"a 42415758 4242 × 9999 = 4242 × ( 10000 - 1 ) = 4242 × 10000 - 4242 × 1 = 42420000 - 4242 = 42415758\"",
+    "options": "a ) 42415758 , b ) 42415751 , c ) 42415752 , d ) 42415753 , e ) 42415754",
+    "correct": "a",
+    "annotated_formula": "multiply(divide(4242, 9999), const_100)",
+    "linear_formula": "divide(n0,n1)|multiply(#0,const_100)|",
+    "category": "general",
+    "predicted_rational": "1. Understand the problem: We are given two numbers and we need to find their product.\n\n2. Use the multiplication algorithm: We can use the standard multiplication algorithm to find the product of 4242 and 9999:\n\n```\n  4242\nx 9999\n------\n  4242 (multiply 9 by each digit of 4242)\n 42420 (multiply 9 by each digit of 4242, shifted one place to the left)\n424200 (multiply 9 by each digit of 4242, shifted two places to the left)\n-------\n42375758 (sum the partial products)\n```\n\nTherefore, the answer is a.\nAnswer: a",
+    "prediction": "a"
+}
+{
+    "Problem": "45 pupil , out of them 12 in debate only and 22 in singing only . then how many in both ?",
+    "Rationale": "the intersection for two = 45 - 12 - 22 = 11 play both games . answer : c",
+    "options": "a ) 9 , b ) 10 , c ) 11 , d ) 12 , e ) 13",
+    "correct": "c",
+    "annotated_formula": "subtract(45, add(12, 22))",
+    "linear_formula": "add(n1,n2)|subtract(n0,#0)",
+    "category": "other",
+    "predicted_rational": "There are different methods to solve this problem, but one common one is to use the formula:\n\nTotal = Group 1 + Group 2 - Both + Neither\n\nIn this case, we know that Total = 45, Group 1 (debate only) = 12, and Group 2 (singing only) = 22. We want to find Both. We don't know Neither, but we can find it by subtracting the other three:\n\nNeither = Total - Group 1 - Group 2 = 45 - 12 - 22 = 11\n\nNow we can use the formula to find Both:\n\nBoth = Total - Group 1 - Group 2 + Neither = 45 - 12 - 22 + 11 = 22\n\nTherefore, the answer is 22, which is option b.",
+    "prediction": "b"
+}
+{
+    "Problem": "45 pupil , out of them 12 in debate only and 22 in singing only . then how many in both ?",
+    "Rationale": "the intersection for two = 45 - 12 - 22 = 11 play both games . answer : c",
+    "options": "a ) 9 , b ) 10 , c ) 11 , d ) 12 , e ) 13",
+    "correct": "c",
+    "annotated_formula": "subtract(45, add(12, 22))",
+    "linear_formula": "add(n1,n2)|subtract(n0,#0)",
+    "category": "other",
+    "predicted_rational": "1. Understand the problem: We are given information about the number of students involved in debate and singing, and we need to find the number of students involved in both.\n\n2. Use a Venn diagram: We can use a Venn diagram to represent the information given in the problem. Let D represent the set of students involved in debate, S represent the set of students involved in singing, and the intersection of D and S represent the set of students involved in both. Then, we can fill in the given information as follows:\n\n- The total number of students is 45.\n- 12 students are in debate only, so |D| = 12.\n- 22 students are in singing only, so |S| = 22.\n\nWe want to find |D ∩ S|, the number of students involved in both.\n\n3. Use the formula: We can use the formula for the size of the union of two sets to find |D ∪ S|, the total number of students involved in debate or singing:\n\n|D ∪ S| = |D| + |S| - |D ∩ S|\n\nWe know |D| and |S|, so we can rearrange the formula to solve for |D ∩ S|:\n\n|D ∩ S| = |D| + |S| - |D ∪ S|\n\nWe can substitute the values we know:\n\n|D ∩ S| = 12 + 22 - 45 = 11\n\nTherefore, the answer is c.\nAnswer: c",
+    "prediction": "c"
+}
+{
+    "Problem": "5354 x 51 = ?",
+    "Rationale": "\"5354 x 51 = 5354 x ( 50 + 1 ) = 5354 x 50 + 5354 x 1 = 267700 + 5354 = 273054 a\"",
+    "options": "a ) 273054 , b ) 273243 , c ) 273247 , d ) 273250 , e ) 273258",
+    "correct": "a",
+    "annotated_formula": "multiply(divide(5354, 51), const_100)",
+    "linear_formula": "divide(n0,n1)|multiply(#0,const_100)|",
+    "category": "general",
+    "predicted_rational": "To multiply two numbers using the traditional method, we multiply the digits in the ones place, then the digits in the tens place, and so on, and add up the results. Starting with the ones place:\n\n4 x 1 = 4\n5 x 1 = 5\n4 x 5 = 20 (write down 0 and carry over 2)\n5 x 5 + 2 = 27 (write down 7 and carry over 2)\n5 x 3 + 2 = 17 (write down 7 and carry over 1)\n5 x 5 + 1 = 26 (write down 6 and carry over 2)\n5 x 5 + 2 = 27 (write down 7 and carry over 2)\n\nSo the answer is 273254, which is closest to option (c) 273247. Therefore, the answer is c.",
+    "prediction": "c"
+}
+{
+    "Problem": "5354 x 51 = ?",
+    "Rationale": "\"5354 x 51 = 5354 x ( 50 + 1 ) = 5354 x 50 + 5354 x 1 = 267700 + 5354 = 273054 a\"",
+    "options": "a ) 273054 , b ) 273243 , c ) 273247 , d ) 273250 , e ) 273258",
+    "correct": "a",
+    "annotated_formula": "multiply(divide(5354, 51), const_100)",
+    "linear_formula": "divide(n0,n1)|multiply(#0,const_100)|",
+    "category": "general",
+    "predicted_rational": "1. Understand the problem: We are given two numbers and we need to find their product.\n\n2. Set up the multiplication: We can set up the multiplication as follows:\n\n   5354\n x  51\n -----\n   26770\n  26770\n -------\n  273054\n\n3. Check the answer: We can check our answer by multiplying the two numbers using a calculator:\n\n   5354 x 51 = 273054\n\nTherefore, the answer is a.\nAnswer: a",
+    "prediction": "a"
+}
+{
+    "Problem": "800 men have provisions for 15 days . if 200 more men join them , for how many days will the provisions last now ?",
+    "Rationale": "\"800 * 15 = 1000 * x x = 12 answer : e\"",
+    "options": "a ) 11.5 , b ) 12.5 , c ) 10.5 , d ) 11 , e ) 12",
+    "correct": "e",
+    "annotated_formula": "divide(multiply(15, 800), add(800, 200))",
+    "linear_formula": "add(n0,n2)|multiply(n0,n1)|divide(#1,#0)|",
+    "category": "physics",
+    "predicted_rational": "let the amount of provisions be p . then , 800 * 15 = p . also , ( 800 + 200 ) * d = p , where d is the number of days the provisions will last for the increased number of men . substituting the value of p from the first equation , we get ( 800 + 200 ) * d = 800 * 15 ⇒ d = 12.5 . therefore , b",
+    "prediction": "b"
+}
+{
+    "Problem": "800 men have provisions for 15 days . if 200 more men join them , for how many days will the provisions last now ?",
+    "Rationale": "\"800 * 15 = 1000 * x x = 12 answer : e\"",
+    "options": "a ) 11.5 , b ) 12.5 , c ) 10.5 , d ) 11 , e ) 12",
+    "correct": "e",
+    "annotated_formula": "divide(multiply(15, 800), add(800, 200))",
+    "linear_formula": "add(n0,n2)|multiply(n0,n1)|divide(#1,#0)|",
+    "category": "physics",
+    "predicted_rational": "1. Understand the problem: We are given information about the number of men and the amount of provisions they have, and we need to find how long the provisions will last when more men join.\n\n2. Calculate the total amount of provisions: We can calculate the total amount of provisions as follows:\n\n800 men x 15 days = 12,000 man-days\n\nThis represents the total amount of provisions that the original group of 800 men has for 15 days.\n\n3. Calculate the new amount of provisions: When 200 more men join, the total number of men becomes 1000. We can calculate the new amount of provisions as follows:\n\n1000 men x n days = 12,000 man-days\n\nwhere n is the number of days the provisions will last for the new group of 1000 men.\n\n4. Solve for n: We can simplify the equation as follows:\n\nn = 12,000 man-days / 1000 men = 12 days\n\nTherefore, the provisions will last for 12 days when 200 more men join.\n\n5. Check the answer: We can check our answer by verifying that the total amount of provisions is the same for both groups:\n\n800 men x 15 days = 12,000 man-days\n1000 men x 12 days = 12,000 man-days\n\nTherefore, the answer is e.\nAnswer: e",
+    "prediction": "e"
+}
+{
+    "Problem": "900 men have provisions for 15 days . if 200 more men join them , for how many days will the provisions last now ?",
+    "Rationale": "\"900 * 15 = 1100 * x x = 12.27 . answer : e\"",
+    "options": "a ) 12.88 , b ) 12.6 , c ) 12.55 , d ) 12.21 , e ) 12.27",
+    "correct": "e",
+    "annotated_formula": "divide(multiply(15, 900), add(900, 200))",
+    "linear_formula": "add(n0,n2)|multiply(n0,n1)|divide(#1,#0)|",
+    "category": "physics",
+    "predicted_rational": "Let the amount of provisions be P. Then, we can set up the equation:\n\n900 * 15 = (900 + 200) * x\n\nSimplifying, we get:\n\nx = 12.6\n\nTherefore, the provisions will last for 12.6 days. The answer is b.",
+    "prediction": "b"
+}
+{
+    "Problem": "900 men have provisions for 15 days . if 200 more men join them , for how many days will the provisions last now ?",
+    "Rationale": "\"900 * 15 = 1100 * x x = 12.27 . answer : e\"",
+    "options": "a ) 12.88 , b ) 12.6 , c ) 12.55 , d ) 12.21 , e ) 12.27",
+    "correct": "e",
+    "annotated_formula": "divide(multiply(15, 900), add(900, 200))",
+    "linear_formula": "add(n0,n2)|multiply(n0,n1)|divide(#1,#0)|",
+    "category": "physics",
+    "predicted_rational": "1. Understand the problem: We are given information about the number of men and the amount of provisions they have, and we need to find the new number of days the provisions will last when more men join.\n\n2. Calculate the total amount of provisions: We can calculate the total amount of provisions as follows:\n\nProvisions = 900 x 15 = 13500\n\n3. Calculate the new number of men: We can calculate the new number of men as follows:\n\nNew number of men = 900 + 200 = 1100\n\n4. Calculate the new number of days: We can calculate the new number of days using the formula:\n\nProvisions / (New number of men x Daily consumption) = Number of days\n\nWe are not given the daily consumption, but we can assume that it remains constant. Therefore, we can use the fact that the provisions last for 15 days with 900 men to find the daily consumption:\n\nDaily consumption = Provisions / (900 x 15) = 13500 / 13500 = 1\n\nNow we can use this daily consumption to find the new number of days:\n\nNumber of days = Provisions / (1100 x 1) = 13500 / 1100 = 12.27\n\nTherefore, the answer is e.\nAnswer: e",
+    "prediction": "e"
+}

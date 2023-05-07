@@ -1,0 +1,221 @@
+{
+    "Problem": "1 ÷ [ 1 + 1 ÷ { 1 + 1 ÷ ( 1 ÷ 1 ) } ] = ?",
+    "Rationale": "explanation : 1 ÷ [ 1 + 1 ÷ { 1 + 1 ÷ ( 1 ÷ 1 ) } ] = 1 ÷ [ 1 + 1 ÷ { 1 + 1 ÷ 1 } ] = 1 ÷ [ 1 + 1 ÷ { 1 + 1 } ] = 1 ÷ [ 1 + 1 ÷ 2 ] = 1 ÷ [ 1 + ( 1 / 2 ) ] = 1 ÷ 3 / 2 = 1 × 3 / 2 = 1 × 2 / 3 = 2 / 3 answer : option c",
+    "options": "a ) 5 / 3 , b ) 4 / 3 , c ) 2 / 3 , d ) 1 / 3 , e ) 1 / 5",
+    "correct": "c",
+    "annotated_formula": "divide(1, add(1, divide(1, add(1, divide(1, 1)))))",
+    "linear_formula": "divide(n0,n0)|add(n0,#0)|divide(n0,#1)|add(n0,#2)|divide(n0,#3)",
+    "category": "general",
+    "predicted_rational": "1 ÷ [ 1 + 1 ÷ { 1 + 1 ÷ ( 1 ÷ 1 ) } ] = 1 ÷ [ 1 + 1 ÷ { 1 + 1 } ] = 1 ÷ [ 1 + 1 / 2 ] = 1 ÷ 3 / 2 = 2 / 3. Therefore, the answer is c.",
+    "prediction": "c"
+}
+{
+    "Problem": "1 ÷ [ 1 + 1 ÷ { 1 + 1 ÷ ( 1 ÷ 1 ) } ] = ?",
+    "Rationale": "explanation : 1 ÷ [ 1 + 1 ÷ { 1 + 1 ÷ ( 1 ÷ 1 ) } ] = 1 ÷ [ 1 + 1 ÷ { 1 + 1 ÷ 1 } ] = 1 ÷ [ 1 + 1 ÷ { 1 + 1 } ] = 1 ÷ [ 1 + 1 ÷ 2 ] = 1 ÷ [ 1 + ( 1 / 2 ) ] = 1 ÷ 3 / 2 = 1 × 3 / 2 = 1 × 2 / 3 = 2 / 3 answer : option c",
+    "options": "a ) 5 / 3 , b ) 4 / 3 , c ) 2 / 3 , d ) 1 / 3 , e ) 1 / 5",
+    "correct": "c",
+    "annotated_formula": "divide(1, add(1, divide(1, add(1, divide(1, 1)))))",
+    "linear_formula": "divide(n0,n0)|add(n0,#0)|divide(n0,#1)|add(n0,#2)|divide(n0,#3)",
+    "category": "general",
+    "predicted_rational": "1. Understand the problem: We are given a complex fraction and we need to simplify it.\n\n2. Simplify the innermost expression: We can simplify the expression inside the innermost set of parentheses as follows:\n\n1 ÷ 1 = 1\n\n3. Simplify the next level of expression: We can simplify the expression inside the next set of parentheses as follows:\n\n1 + 1 ÷ 1 = 2\n\n4. Simplify the next level of expression: We can simplify the expression inside the outermost set of parentheses as follows:\n\n1 + 1 ÷ 2 = 3/2\n\n5. Simplify the entire fraction: We can simplify the entire fraction as follows:\n\n1 ÷ (1 + 3/2) = 1 ÷ 5/2 = 2/5\n\nTherefore, the answer is e.\nAnswer: e",
+    "prediction": "e"
+}
+{
+    "Problem": "10 men and 15 women together can complete a work in 4 days . it takes 100 days for one man alone to complete the same work . how many days will be required for one woman alone to complete the same work ?",
+    "Rationale": "\"1 man ' s 1 day work = 1 / 100 ( 10 men + 15 women ) ' s 1 day work = 1 / 4 15 women ' s 1 day work = ( 1 / 4 - 10 / 100 ) = 3 / 20 1 woman ' s 1 day work = 1 / 100 1 woman alone can complete the work in 100 days . answer : a\"",
+    "options": "a ) 100 days , b ) 667 days , c ) 177 days , d ) 187 days , e ) 225 days",
+    "correct": "a",
+    "annotated_formula": "multiply(divide(multiply(const_1, 100), subtract(multiply(const_1, 100), multiply(10, 4))), multiply(15, 4))",
+    "linear_formula": "multiply(n3,const_1)|multiply(n0,n2)|multiply(n1,n2)|subtract(#0,#1)|divide(#0,#3)|multiply(#4,#2)|",
+    "category": "physics",
+    "predicted_rational": "let the work be 1 unit . then the rate of work of 10 men and 15 women together is 1/4 units per day. the rate of work of one man alone is 1/100 units per day. let the rate of work of one woman alone be w. then we have the equation 10(1/100) + 15w = 1/4, which simplifies to w = 1/300. therefore, one woman alone can complete the work in 300 days. the answer is a) 100 days.",
+    "prediction": "a"
+}
+{
+    "Problem": "10 men and 15 women together can complete a work in 4 days . it takes 100 days for one man alone to complete the same work . how many days will be required for one woman alone to complete the same work ?",
+    "Rationale": "\"1 man ' s 1 day work = 1 / 100 ( 10 men + 15 women ) ' s 1 day work = 1 / 4 15 women ' s 1 day work = ( 1 / 4 - 10 / 100 ) = 3 / 20 1 woman ' s 1 day work = 1 / 100 1 woman alone can complete the work in 100 days . answer : a\"",
+    "options": "a ) 100 days , b ) 667 days , c ) 177 days , d ) 187 days , e ) 225 days",
+    "correct": "a",
+    "annotated_formula": "multiply(divide(multiply(const_1, 100), subtract(multiply(const_1, 100), multiply(10, 4))), multiply(15, 4))",
+    "linear_formula": "multiply(n3,const_1)|multiply(n0,n2)|multiply(n1,n2)|subtract(#0,#1)|divide(#0,#3)|multiply(#4,#2)|",
+    "category": "physics",
+    "predicted_rational": "1. Understand the problem: We are given information about the time it takes for a group of people to complete a work and the time it takes for one man to complete the same work. We need to find the time it takes for one woman to complete the same work.\n\n2. Calculate the rate of work: We can calculate the rate of work per person per day by dividing the total work by the number of people and the number of days:\n\nRate of work = 1 / (10M + 15W) x 4\n\n3. Calculate the rate of work for one man: We can calculate the rate of work for one man by dividing the total work by the time it takes for one man to complete the work:\n\nRate of work for one man = 1 / (100M)\n\n4. Calculate the rate of work for one woman: We can use the principle of proportionality to calculate the rate of work for one woman:\n\nRate of work for one woman / Rate of work for one man = 15W / 10M\nRate of work for one woman = (15W / 10M) x (1 / (100M))\n\n5. Calculate the time for one woman to complete the work: We can calculate the time it takes for one woman to complete the work by dividing the total work by the rate of work for one woman:\n\nTime for one woman to complete the work = 1 / (Rate of work for one woman)\n\nPlugging in the values from steps 2-4, we get:\n\nTime for one woman to complete the work = 1 / ((15/10) x (1/100)) x (1 / (1 / (10M + 15W) x 4))\nTime for one woman to complete the work = 667 days\n\nTherefore, the answer is b.\nAnswer: b",
+    "prediction": "b"
+}
+{
+    "Problem": "1000 men have provisions for 15 days . if 300 more men join them , for how many days will the provisions last now ?",
+    "Rationale": "\"1000 * 15 = 1300 * x x = 11.5 answer : a\"",
+    "options": "a ) 11.5 , b ) 12.5 , c ) 12.6 , d ) 12.2 , e ) 12.1",
+    "correct": "a",
+    "annotated_formula": "divide(multiply(15, 1000), add(1000, 300))",
+    "linear_formula": "add(n0,n2)|multiply(n0,n1)|divide(#1,#0)|",
+    "category": "physics",
+    "predicted_rational": "let the amount of provisions be p . then , 1000 * 15 = ( 1000 + 300 ) d ⇒ d = 11.5 . therefore , a",
+    "prediction": "a"
+}
+{
+    "Problem": "1000 men have provisions for 15 days . if 300 more men join them , for how many days will the provisions last now ?",
+    "Rationale": "\"1000 * 15 = 1300 * x x = 11.5 answer : a\"",
+    "options": "a ) 11.5 , b ) 12.5 , c ) 12.6 , d ) 12.2 , e ) 12.1",
+    "correct": "a",
+    "annotated_formula": "divide(multiply(15, 1000), add(1000, 300))",
+    "linear_formula": "add(n0,n2)|multiply(n0,n1)|divide(#1,#0)|",
+    "category": "physics",
+    "predicted_rational": "1. Understand the problem: We are given information about the number of men and the amount of provisions they have, and we need to find the new duration of the provisions when more men join.\n\n2. Calculate the total amount of provisions: We can calculate the total amount of provisions as follows:\n\nProvisions = 1000 x 15 = 15000\n\n3. Calculate the amount of provisions per man per day: We can calculate the amount of provisions per man per day as follows:\n\nProvisions per man per day = Provisions / (1000 x 15) = 1/15\n\n4. Calculate the new number of men: We can calculate the new number of men as follows:\n\nNew number of men = 1000 + 300 = 1300\n\n5. Calculate the new duration of the provisions: We can calculate the new duration of the provisions as follows:\n\nNew duration = Provisions / (New number of men x Provisions per man per day) = 15000 / (1300 x 1/15) = 12.5 days\n\nTherefore, the answer is b.\nAnswer: b",
+    "prediction": "b"
+}
+{
+    "Problem": "1850 men have provisions for 15 days . if 150 more men join them , for how many days will the provisions last now ?",
+    "Rationale": "\"1850 * 15 = 2000 * x x = 13.9 answer : c\"",
+    "options": "a ) 12.9 , b ) 12.0 , c ) 13.9 , d ) 13.5 , e ) 12.1",
+    "correct": "c",
+    "annotated_formula": "divide(multiply(15, 1850), add(1850, 150))",
+    "linear_formula": "add(n0,n2)|multiply(n0,n1)|divide(#1,#0)|",
+    "category": "physics",
+    "predicted_rational": "Let the amount of provisions be P. Then, we can set up the equation:\n\n1850 * 15 = (1850 + 150) * x\n\nSimplifying, we get:\n\n27750 = 2000x\nx = 13.875\n\nTherefore, the provisions will last for approximately 13.9 days. The answer is c.",
+    "prediction": "c"
+}
+{
+    "Problem": "1850 men have provisions for 15 days . if 150 more men join them , for how many days will the provisions last now ?",
+    "Rationale": "\"1850 * 15 = 2000 * x x = 13.9 answer : c\"",
+    "options": "a ) 12.9 , b ) 12.0 , c ) 13.9 , d ) 13.5 , e ) 12.1",
+    "correct": "c",
+    "annotated_formula": "divide(multiply(15, 1850), add(1850, 150))",
+    "linear_formula": "add(n0,n2)|multiply(n0,n1)|divide(#1,#0)|",
+    "category": "physics",
+    "predicted_rational": "1. Understand the problem: We are given information about the number of men and the amount of provisions they have, and we need to find the new duration of the provisions when more men join.\n\n2. Calculate the total amount of provisions: We can calculate the total amount of provisions as follows:\n\nProvisions = 1850 x 15 = 27750\n\n3. Calculate the new number of men: We can calculate the new number of men as follows:\n\nNew number of men = 1850 + 150 = 2000\n\n4. Calculate the new duration of provisions: We can calculate the new duration of provisions by dividing the total amount of provisions by the product of the new number of men and the original duration:\n\nNew duration = 27750 / (2000 x 15) = 1.83 days\n\nTherefore, the answer is approximately 1.83, which is closest to option a) 12.9.\nAnswer: a",
+    "prediction": "a"
+}
+{
+    "Problem": "20 men do a work in 20 days . how many men are needed to finish the work in 10 days ?",
+    "Rationale": "\"men required to finish the work in 10 days = 20 * 20 / 10 = 40 answer is e\"",
+    "options": "a ) 50 , b ) 20 , c ) 30 , d ) 10 , e ) 40",
+    "correct": "e",
+    "annotated_formula": "divide(multiply(20, 20), 10)",
+    "linear_formula": "multiply(n0,n1)|divide(#0,n2)|",
+    "category": "physics",
+    "predicted_rational": "Let the amount of work be 1 unit. Then, 20 men can do the work in 20 days, so the rate of work is 1/20 unit per day per man. To finish the work in 10 days, we need a rate of 1/10 unit per day. Let x be the number of men needed to achieve this rate. Then, we have:\n\nx * (1/20) = (1/10)\n\nSolving for x, we get:\n\nx = 20\n\nTherefore, 20 more men are needed to finish the work in 10 days, for a total of 40 men. The answer is e.",
+    "prediction": "e"
+}
+{
+    "Problem": "20 men do a work in 20 days . how many men are needed to finish the work in 10 days ?",
+    "Rationale": "\"men required to finish the work in 10 days = 20 * 20 / 10 = 40 answer is e\"",
+    "options": "a ) 50 , b ) 20 , c ) 30 , d ) 10 , e ) 40",
+    "correct": "e",
+    "annotated_formula": "divide(multiply(20, 20), 10)",
+    "linear_formula": "multiply(n0,n1)|divide(#0,n2)|",
+    "category": "physics",
+    "predicted_rational": "1. Understand the problem: We are given information about the number of men and the time it takes to complete a work. We need to find the number of men needed to complete the work in a shorter time.\n\n2. Calculate the rate of work: We can calculate the rate of work per man per day by dividing the total work by the number of men and the number of days:\n\nRate of work = 1 / (20 x 20) = 1 / 400\n\n3. Calculate the total work: We can calculate the total work as follows:\n\nTotal work = Rate of work x Number of men x Number of days = 1 x 20 x 20 = 400\n\n4. Calculate the new time to finish the work: We can calculate the new time to finish the work by dividing the total work by the new number of men and the original rate of work per man per day:\n\nNew time to finish the work = Total work / (New number of men x Rate of work) = 400 / (10 x 1/400) = 1600 / 10 = 160\n\nTherefore, 50 men are needed to finish the work in 10 days.\n\nTherefore, the answer is a.\nAnswer: a",
+    "prediction": "a"
+}
+{
+    "Problem": "23 , 27 , 36 , 52 , . . .",
+    "Rationale": "\"explanation : 23 23 + 2 ^ 2 = 27 23 + 3 ^ 2 = 36 23 + 4 ^ 2 = 52 23 + 5 ^ 2 = 77 answer : c\"",
+    "options": "a ) 40 , b ) 24 , c ) 77 , d ) 36 , e ) 12",
+    "correct": "c",
+    "annotated_formula": "subtract(negate(52), multiply(subtract(27, 36), divide(subtract(27, 36), subtract(23, 27))))",
+    "linear_formula": "negate(n3)|subtract(n1,n2)|subtract(n0,n1)|divide(#1,#2)|multiply(#3,#1)|subtract(#0,#4)|",
+    "category": "general",
+    "predicted_rational": "There are different ways to approach this question, but one possible method is to look for a pattern in the given sequence. One way to do this is to find the differences between consecutive terms:\n\n27 - 23 = 4\n36 - 27 = 9\n52 - 36 = 16\n\nNotice that the differences are consecutive perfect squares: 4 = 2^2, 9 = 3^2, 16 = 4^2. This suggests that the next difference should be 25 = 5^2, so the next term in the sequence should be 52 + 25 = 77. Therefore, the answer is c.",
+    "prediction": "c"
+}
+{
+    "Problem": "23 , 27 , 36 , 52 , . . .",
+    "Rationale": "\"explanation : 23 23 + 2 ^ 2 = 27 23 + 3 ^ 2 = 36 23 + 4 ^ 2 = 52 23 + 5 ^ 2 = 77 answer : c\"",
+    "options": "a ) 40 , b ) 24 , c ) 77 , d ) 36 , e ) 12",
+    "correct": "c",
+    "annotated_formula": "subtract(negate(52), multiply(subtract(27, 36), divide(subtract(27, 36), subtract(23, 27))))",
+    "linear_formula": "negate(n3)|subtract(n1,n2)|subtract(n0,n1)|divide(#1,#2)|multiply(#3,#1)|subtract(#0,#4)|",
+    "category": "general",
+    "predicted_rational": "1. Understand the problem: We are given a sequence of numbers and we need to find the next number in the sequence.\n\n2. Look for a pattern: We can look for a pattern in the given numbers to determine the next number. One possible pattern is that each number is the sum of the digits of the previous number squared:\n\n23 = 2^2 + 3^2 = 13\n27 = 2^2 + 7^2 = 53\n36 = 3^2 + 6^2 = 45\n52 = 5^2 + 2^2 = 29\n\nUsing this pattern, we can find the next number in the sequence:\n\n?? = 4^2 + 5^2 = 41\n\n3. Check the answer: We can check our answer by verifying that 41 fits the pattern:\n\n41 = 4^2 + 1^2 = 17\n\nTherefore, the answer is not a choice given in the question.",
+    "prediction": "a",
+    "last 50": " the answer is not a choice given in the question."
+}
+{
+    "Problem": "24 oz of juice p and 25 oz of juice t are mixed to make smothies x and y . the ratio of p to t in smothie x is 4 is to 1 and that in y is 1 is to 5 . how many ounces of juice p are contained in the smothie x ?",
+    "Rationale": "easy way to solve this question is start from the answer and then conform the information provided in the question . we can start from option d i . e 20 . . . as a quantity of juice p in x because it is the only one option that gets divided by 4 is 20 . . . since in the x the juice p to t ratio is 4 : 1 this gives us that quantity of juice p in x = 20 therefore quantity of juice t will be 5 . . . hence ratio = 4 : 1 this will lead to quantity of juice p in x = 4 and quantity of juice t = 20 . . . hence ratio 1 : 5 if we calculate total juice p = 24 and total of juice v = 25 it fits because totals are same as what mentioned in the question . . . thus ans is d",
+    "options": "a ) 5 , b ) 10 , c ) 15 , d ) 20 , e ) 25",
+    "correct": "d",
+    "annotated_formula": "subtract(24, divide(subtract(multiply(4, 25), 24), subtract(multiply(4, 5), 1)))",
+    "linear_formula": "multiply(n1,n2)|multiply(n2,n5)|subtract(#0,n0)|subtract(#1,n3)|divide(#2,#3)|subtract(n0,#4)",
+    "category": "other",
+    "predicted_rational": "let the amount of juice p in smothie x be 4x and in smothie y be y . then we have the following system of equations : 4x + y = 24 ( total amount of juice p ) x + 5y = 25 ( total amount of juice t ) solving for x in the first equation gives x = ( 24 - y ) / 4 . substituting this into the second equation gives ( 24 - y ) / 4 + 5y = 25 . solving for y gives y = 5 . substituting this back into the first equation gives x = 5 . therefore , the amount of juice p in smothie x is 4x = 4 * 5 = 20 . the answer is d.",
+    "prediction": "d"
+}
+{
+    "Problem": "24 oz of juice p and 25 oz of juice t are mixed to make smothies x and y . the ratio of p to t in smothie x is 4 is to 1 and that in y is 1 is to 5 . how many ounces of juice p are contained in the smothie x ?",
+    "Rationale": "easy way to solve this question is start from the answer and then conform the information provided in the question . we can start from option d i . e 20 . . . as a quantity of juice p in x because it is the only one option that gets divided by 4 is 20 . . . since in the x the juice p to t ratio is 4 : 1 this gives us that quantity of juice p in x = 20 therefore quantity of juice t will be 5 . . . hence ratio = 4 : 1 this will lead to quantity of juice p in x = 4 and quantity of juice t = 20 . . . hence ratio 1 : 5 if we calculate total juice p = 24 and total of juice v = 25 it fits because totals are same as what mentioned in the question . . . thus ans is d",
+    "options": "a ) 5 , b ) 10 , c ) 15 , d ) 20 , e ) 25",
+    "correct": "d",
+    "annotated_formula": "subtract(24, divide(subtract(multiply(4, 25), 24), subtract(multiply(4, 5), 1)))",
+    "linear_formula": "multiply(n1,n2)|multiply(n2,n5)|subtract(#0,n0)|subtract(#1,n3)|divide(#2,#3)|subtract(n0,#4)",
+    "category": "other",
+    "predicted_rational": "1. Understand the problem: We are given information about the amounts and ratios of two types of juice used to make two smoothies. We need to find the amount of one type of juice in one of the smoothies.\n\n2. Set up equations: Let x be the amount of juice P in smoothie X. Then, we can set up the following equations based on the given information:\n\nx + (25 - x) = 24 (total amount of juice in smoothie X)\nx / (25 - x) = 4/1 (ratio of P to T in smoothie X)\n(24 - x) / x = 5/1 (ratio of T to P in smoothie Y)\n\n3. Solve for x: We can simplify the equations as follows:\n\nx + 25 - x = 24\n25 - x = 24\nx = 1\n\nx / (25 - x) = 4/1\n1 / 24 = 4/1 - 1\n1 / 24 = 3/1\nx = 3\n\nTherefore, there are 3 ounces of juice P in smoothie X.\n\n4. Check the answer: We can check our answer by verifying that the ratio of P to T in smoothie X is indeed 4:1:\n\n3 / 22 = 4/1\n\nTherefore, the answer is a.\nAnswer: a",
+    "prediction": "a"
+}
+{
+    "Problem": "3 pumps , working 8 hours a day , can empty a tank in 2 days . how many hours a day must 4 pumps work to empty the tank in 1 day ?",
+    "Rationale": "the required number of working hours per day x , more pumps , less working hours per day ( indirect ) less days , more working hours per day ( indirect ) pumps 4 : 3 , days 1 : 2 } : : 8 : x therefore 4 * 1 * x = 3 * 2 * 8 , x = ( 3 * 2 * 8 ) / 4 x = 12 correct answer ( d )",
+    "options": "a ) 9 , b ) 10 , c ) 11 , d ) 12 , e ) 13",
+    "correct": "d",
+    "annotated_formula": "divide(multiply(multiply(3, 8), 2), 4)",
+    "linear_formula": "multiply(n0,n1)|multiply(n2,#0)|divide(#1,n3)",
+    "category": "physics",
+    "predicted_rational": "let the capacity of the tank be c . then , 3 pumps working 8 hours a day can empty the tank in 2 days . so , the rate of each pump is c / ( 3 * 8 * 2 ) = c / 48 . now , we want to find how many hours 4 pumps must work to empty the tank in 1 day . let h be the number of hours each pump must work . then , the rate of each pump is c / ( 4 * h ) . since the tank is emptied in 1 day , we have c = ( 4 * h * 48 ) / 1 . solving for h , we get h = 12 . therefore , the answer is d.",
+    "prediction": "d"
+}
+{
+    "Problem": "3 pumps , working 8 hours a day , can empty a tank in 2 days . how many hours a day must 4 pumps work to empty the tank in 1 day ?",
+    "Rationale": "the required number of working hours per day x , more pumps , less working hours per day ( indirect ) less days , more working hours per day ( indirect ) pumps 4 : 3 , days 1 : 2 } : : 8 : x therefore 4 * 1 * x = 3 * 2 * 8 , x = ( 3 * 2 * 8 ) / 4 x = 12 correct answer ( d )",
+    "options": "a ) 9 , b ) 10 , c ) 11 , d ) 12 , e ) 13",
+    "correct": "d",
+    "annotated_formula": "divide(multiply(multiply(3, 8), 2), 4)",
+    "linear_formula": "multiply(n0,n1)|multiply(n2,#0)|divide(#1,n3)",
+    "category": "physics",
+    "predicted_rational": "1. Understand the problem: We are given information about the number of pumps, the time it takes to empty a tank, and the desired time to empty the tank. We need to find the number of hours per day that 4 pumps must work to achieve this.\n\n2. Determine the rate of work: We can determine the rate of work per pump per hour by dividing the amount of work (emptying the tank) by the number of pumps and the number of hours:\n\nRate of work = 1 / (3 x 8 x 2) = 1 / 48\n\n3. Determine the amount of work to be done: We can determine the amount of work to be done (emptying the tank) based on the desired time:\n\nAmount of work = 1 / 1 = 1\n\n4. Determine the new rate of work: We can determine the new rate of work based on the desired time and the number of pumps:\n\nNew rate of work = 1 / (4 x h)\n\nwhere h is the number of hours per day that 4 pumps must work.\n\n5. Set up an equation: We can set up an equation based on the fact that the amount of work done must be the same in both cases:\n\nRate of work x Time = Amount of work\n\nUsing the rates of work from steps 2 and 4, we get:\n\n1/48 x 16 = 1 / (4 x h)\n\n6. Solve for h: We can simplify the equation as follows:\n\n1/3 = 1 / (4 x h)\n4 x h = 3\nh = 3/4\n\nTherefore, 4 pumps must work 3/4 hours per day, or 45 minutes per day, to empty the tank in 1 day.\n\n7. Convert to minutes: We can convert this to minutes per day by multiplying by 60:\n\n45 minutes per day = 0.75 hours per day = 45/60 hours per day\n\nTherefore, the answer is a.\n\nAnswer: a",
+    "prediction": "a"
+}
+{
+    "Problem": "3 years ago , the average age of a , b and c was 27 years and that of b and c 5 years ago was 20 years . a ’ s present age is :",
+    "Rationale": "explanation : sum of the present ages of a , b and c = ( 27 × 3 + 3 × 3 ) years = 90 years . sum of the present ages of b and c = ( 20 × 2 + 5 × 2 ) years = 50 years . a ' s present age = 90 – 50 = 40 years . answer : c",
+    "options": "a ) 22 , b ) 88 , c ) 40 , d ) 87 , e ) 17",
+    "correct": "c",
+    "annotated_formula": "subtract(add(multiply(27, 3), multiply(3, 3)), add(multiply(20, const_2), multiply(5, const_2)))",
+    "linear_formula": "multiply(n0,n1)|multiply(n0,n0)|multiply(n3,const_2)|multiply(n2,const_2)|add(#0,#1)|add(#2,#3)|subtract(#4,#5)",
+    "category": "general",
+    "predicted_rational": "Let the present age of A, B, and C be a, b, and c respectively. \n3 years ago, their average age was 27, so (a-3 + b-3 + c-3)/3 = 27\nSimplifying, we get a + b + c = 90\n5 years ago, the average age of B and C was 20, so (b-5 + c-5)/2 = 20\nSimplifying, we get b + c = 50\nSubstituting b + c = 50 in the equation a + b + c = 90, we get a = 40\nTherefore, A's present age is 40. The answer is c.",
+    "prediction": "c"
+}
+{
+    "Problem": "3 years ago , the average age of a , b and c was 27 years and that of b and c 5 years ago was 20 years . a ’ s present age is :",
+    "Rationale": "explanation : sum of the present ages of a , b and c = ( 27 × 3 + 3 × 3 ) years = 90 years . sum of the present ages of b and c = ( 20 × 2 + 5 × 2 ) years = 50 years . a ' s present age = 90 – 50 = 40 years . answer : c",
+    "options": "a ) 22 , b ) 88 , c ) 40 , d ) 87 , e ) 17",
+    "correct": "c",
+    "annotated_formula": "subtract(add(multiply(27, 3), multiply(3, 3)), add(multiply(20, const_2), multiply(5, const_2)))",
+    "linear_formula": "multiply(n0,n1)|multiply(n0,n0)|multiply(n3,const_2)|multiply(n2,const_2)|add(#0,#1)|add(#2,#3)|subtract(#4,#5)",
+    "category": "general",
+    "predicted_rational": "1. Understand the problem: We are given information about the average ages of three people and how those averages have changed over time. We need to find the present age of person A.\n\n2. Set up equations: Let A, B, and C be the present ages of the three people. Then, we can set up the following equations based on the given information:\n\n(A-3 + B-3 + C-3)/3 = 27\n(B-5 + C-5)/2 = 20\n\n3. Solve for B and C: We can simplify the second equation as follows:\n\n(B-5 + C-5)/2 = 20\nB-5 + C-5 = 40\nB + C = 50\n\nWe can substitute this expression for B + C into the first equation and simplify as follows:\n\n(A-3 + B-3 + C-3)/3 = 27\nA-3 + (B + C - 6)/3 = 27\nA-3 + (50 - 6)/3 = 27\nA-3 + 44/3 = 27\nA = 22\n\nTherefore, the answer is a.\nAnswer: a",
+    "prediction": "a"
+}
+{
+    "Problem": "6 computers , each working at the same constant rate , together can process a certain amount of data in 9 days . how many additional computers , each working at the same constant rate , will be needed to process the same amount of data in 6 days ?",
+    "Rationale": "explanation : if six computers require 9 days to process the data , thats a total of 54 computer - days the product of 6 and 9 . if you change the number of computers or the number of days , 54 will have to remain the product , whether that means 54 days of one computer or one day with 54 computers . in 6 days , the number of computers is : 6 c = 54 c = 9 9 computers is 3 more than the 6 that it took to do the job in 9 days , so the correct choice is ( a ) .",
+    "options": "a ) 3 , b ) 5 , c ) 6 , d ) 9 , e ) 12",
+    "correct": "a",
+    "annotated_formula": "subtract(divide(multiply(6, divide(const_1, 6)), divide(const_1, 9)), 6)",
+    "linear_formula": "divide(const_1,n0)|divide(const_1,n1)|multiply(n0,#0)|divide(#2,#1)|subtract(#3,n0)",
+    "category": "physics",
+    "predicted_rational": "let the amount of data be x . then , 6 computers can process x in 9 days . so , the rate of each computer is x / ( 6 * 9 ) = x / 54 . to process the same amount of data in 6 days , let the number of additional computers needed be n . then , ( 6 + n ) computers can process x in 6 days . so , the rate of each computer is x / ( 6 * ( 6 + n ) ) = x / ( 36 + 6n ) . since the rate of each computer is the same in both cases , we can equate the two expressions for the rate : x / 54 = x / ( 36 + 6n ) . solving for n , we get n = 3 . therefore , a.",
+    "prediction": "a"
+}
+{
+    "Problem": "6 computers , each working at the same constant rate , together can process a certain amount of data in 9 days . how many additional computers , each working at the same constant rate , will be needed to process the same amount of data in 6 days ?",
+    "Rationale": "explanation : if six computers require 9 days to process the data , thats a total of 54 computer - days the product of 6 and 9 . if you change the number of computers or the number of days , 54 will have to remain the product , whether that means 54 days of one computer or one day with 54 computers . in 6 days , the number of computers is : 6 c = 54 c = 9 9 computers is 3 more than the 6 that it took to do the job in 9 days , so the correct choice is ( a ) .",
+    "options": "a ) 3 , b ) 5 , c ) 6 , d ) 9 , e ) 12",
+    "correct": "a",
+    "annotated_formula": "subtract(divide(multiply(6, divide(const_1, 6)), divide(const_1, 9)), 6)",
+    "linear_formula": "divide(const_1,n0)|divide(const_1,n1)|multiply(n0,#0)|divide(#2,#1)|subtract(#3,n0)",
+    "category": "physics",
+    "predicted_rational": "1. Understand the problem: We are given information about the processing rate of computers and the time it takes to process a certain amount of data. We need to find the number of additional computers needed to process the same amount of data in a shorter time.\n\n2. Calculate the total amount of data: We can calculate the total amount of data as follows:\n\nTotal amount of data = (6 computers) x (9 days) = 54 computer-days\n\n3. Calculate the processing rate of each computer: We can calculate the processing rate of each computer by dividing the total amount of data by the number of computer-days:\n\nProcessing rate of each computer = 54 computer-days / 6 computers = 9 computer-days/computer\n\n4. Calculate the new time to process the data: We can calculate the new time to process the data by dividing the total amount of data by the total processing rate:\n\nNew time to process the data = 54 computer-days / (6 + x) computers x (9/6) days = 54 computer-days / (6 + x) computers x 3/2 days\n\n5. Set up an equation: We can set up an equation based on the given information and the formula for the new time to process the data:\n\n54 computer-days / 9 computer-days/computer = 54 computer-days / (6 + x) computers x 3/2 days\n\n6. Solve for x: We can simplify the equation as follows:\n\n6 + x = 18\nx = 12\n\nTherefore, 12 additional computers are needed to process the same amount of data in 6 days.\n\n7. Check the answer: We can check our answer by verifying that the total processing rate is the same in both cases:\n\n(6 computers + 12 computers) x 9 days x 9 computer-days/computer = 54 computer-days\n\n(18 computers) x 6 days x 9 computer-days/computer = 54 computer-days\n\nTherefore, the answer is e.\nAnswer: e",
+    "prediction": "e"
+}
